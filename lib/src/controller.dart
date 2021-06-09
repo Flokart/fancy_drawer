@@ -12,7 +12,7 @@ class FancyDrawerController extends ChangeNotifier {
   DrawerState state = DrawerState.closed;
 
   FancyDrawerController(
-      {@required this.vsync, this.duration = const Duration(milliseconds: 250)})
+      {required this.vsync, this.duration = const Duration(milliseconds: 250)})
       : _animationController =
             AnimationController(vsync: vsync, duration: duration) {
     _initController();
